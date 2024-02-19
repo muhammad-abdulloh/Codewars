@@ -8,21 +8,18 @@ namespace Codewars
 {
     public static class Probems
     {
-        public static IEnumerable<IEnumerable<int>> EachCons(int[] list, int n)
+        public static int StrCount(string str, char letter)
         {
-            var result = new List<List<int>>();
-            for (int i = 0; i<= list.Count() - n; i++)
+            int z = 0;
+
+            foreach (char c in str)
             {
-                var sublist = new List<int>();  
-
-                for (int j = i; j < i + n; j++)
+                if (c == letter)
                 {
-                    sublist.Add(list[j]);
+                    z++;
                 }
-                result.Add(sublist);
             }
-
-            return result;
+            return z; 
         }
     }
 }

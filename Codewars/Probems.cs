@@ -8,18 +8,11 @@ namespace Codewars
 {
     public static class Probems
     {
-        public static int StrCount(string str, char letter)
+        public static string[] FixTheMeerkat(string[] arr)
         {
-            int z = 0;
 
-            foreach (char c in str)
-            {
-                if (c == letter)
-                {
-                    z++;
-                }
-            }
-            return z; 
+           Array.Reverse(arr);
+            return arr;
         }
     }
 }

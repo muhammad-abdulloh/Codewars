@@ -8,13 +8,15 @@ namespace Codewars
 {
     public static class Probems
     {
-        public static int[] MonkeyCount(int n)
+        public static int[] DivisibleBy(int[] numbers, int divisor)
         {
-            int[] monkey = new int[n];
+            var result = new int[1];
 
-            monkey = Enumerable.Range(1, n).ToArray();
-
-            return monkey;
+            for(int x = 0; x < numbers.Length; x++)
+            {
+                if (numbers[x] % divisor == 0) result[x] = numbers[x];
+            }
+            return result; 
         }
     }
 }

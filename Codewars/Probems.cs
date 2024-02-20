@@ -8,11 +8,13 @@ namespace Codewars
 {
     public static class Probems
     {
-        public static string[] FixTheMeerkat(string[] arr)
+        public static int[] MonkeyCount(int n)
         {
+            int[] monkey = new int[n];
 
-           Array.Reverse(arr);
-            return arr;
+            monkey = Enumerable.Range(1, n).ToArray();
+
+            return monkey;
         }
     }
 }
